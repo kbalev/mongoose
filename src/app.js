@@ -12,10 +12,9 @@ const {
     update,
     remove
 } = require('./utils')
-
 //add, list, modify, delete function
 const app = () => {
-    if (command === "add") {
+   if (command === "add") {
         if (actorInput) {
             add({
                 title: titleInput,
@@ -33,7 +32,7 @@ const app = () => {
     } else if (command === "remove") {
         remove(titleInput)
     }
-    // connection.close(); 
+    
 }
 
-app();
+app()

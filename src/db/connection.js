@@ -12,6 +12,15 @@ const connection = async () =>{
     } catch (error) {
         console.log(error)
     }
-}
+};
+
+const closeConnection = () =>{
+    mongoose.disconnect();
+};
+
 
 connection();
+
+module.exports = {
+    closeConnection,
+}
